@@ -1,0 +1,153 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f2fd, #f4f4f9);
+    color: #090909;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+nav {
+    background: #ff0de7;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff0de7;
+    box-shadow: 0 0 8px rgba(255, 13, 231, 0.3);
+}
+
+form button {
+    background: #f517e6;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background: #f725d4;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f607ea;
+    color: #0b0000;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #0b0000;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #d21bc4;
+}
+
+footer address {
+    color: #ffffff;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    footer address {
+        font-size: 0.9rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+}

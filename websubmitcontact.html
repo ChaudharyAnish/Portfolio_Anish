@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anish Chaudhary's Form Submitted</title>
+  <link rel="stylesheet" href="css5.css" />
+</head>
+<body>
+<header>
+    <h1>Anish Chaudhary's Contact Form</h1>
+</header>
+<main>
+    <div>
+      <p>Personal Details:</p>
+      <p>Name: <span id="display-name"></span></p>
+      <p>Phone: <span id="display-phone"></span></p>
+      <p>Email: <span id="display-email"></span></p>
+      <p>Subject: <span id="display-subject"></span></p>
+      <p>Message: <span id="display-message"></span></p>
+      <h2>Bonjour, Thank you for Submitting The Contact Form !!</h2>
+    </div>
+</main>
+<footer>
+  <address>
+    Anish Chaudhary&#8226; Bonjour &#8226; <a href="mailto:anishchaudhary10@gmail.com">anishchaudhary10@gmail.com</a><br>
+    <a href="https://www.linkedin.com/in/anish-chaudhary-14802628a/" target="_blank">LinkedIn</a> &#8226;
+    <a href="https://github.com/ChaudharyAnish" target="_blank">GitHub</a> &#8226;
+    <a href="Resume_Anish.pdf" download>Download Resume</a>
+  </address>
+</footer>
+  <script>
+    let anish = new URLSearchParams(window.location.search);
+    let name = anish.get('name');
+    let phone = anish.get('phone');
+    let email = anish.get('email');
+    let subject = anish.get('subject');
+    let message= anish.get('message');
+
+    document.getElementById('display-name').textContent = name;
+    document.getElementById('display-phone').textContent = phone;
+    document.getElementById('display-email').textContent = email;
+    document.getElementById('display-subject').textContent = subject;
+    document.getElementById('display-message').textContent = message;
+  </script>
+</body>
+</html>
